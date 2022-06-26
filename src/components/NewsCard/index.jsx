@@ -1,6 +1,8 @@
 import classnames from "classnames";    
 import PropTypes from "prop-types"
 
+import { FormatDate } from "../../utils/formatDate";
+
 import styles from './NewsCard.module.css'
 
 const NewsCard = ({
@@ -29,7 +31,7 @@ const NewsCard = ({
                 </div>
 
                 <div className={styles.newsCardContent}>
-                    <p className={styles.newsCardDate}>{publishedAt}</p>
+                    <p className={styles.newsCardDate}>{FormatDate(publishedAt)}</p>
                     <p className={styles.newsCardAuthor}>
                         {`${author} | ${sourceName}`}
                     </p>
@@ -42,7 +44,7 @@ const NewsCard = ({
                     target="_blank" 
                     rel="noreferrer noopener"
                     >
-                    Go to website</a>
+                    Go To Website</a>
                 </div>
 
             </div>

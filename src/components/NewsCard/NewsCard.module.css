@@ -77,10 +77,13 @@
 }
 
 .url{
+    padding: 6px;
     font-size: 12px;
     font-weight: bold;
-    text-decoration: underline;
-    color: var(--secondary-brand-color);
+    background: orange;
+    color: #fff;
     margin-left: auto;
     margin-top: 16px;
+    text-decoration: none;
+    border-radius: 4px;
 }
